@@ -1,14 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import Router from './src/router';
+import { Amplify } from 'aws-amplify';
+import {withAuthenticator, AmplifyTheme } from 'aws-amplify-react-native';
+import awsconfig from './src/aws-exports';
+Amplify.configure(awsconfig);
 
-export default function App() {
+ function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <Router/>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -18,3 +21,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+{/*const customTheme = { 
+  ...AmplifyTheme,
+  button: {
+    ...AmplifyTheme.button,
+    backgroundColor: 'blue',
+    borderRadius: 10,
+  },
+};*/}
+
+export default withAuthenticator(App);

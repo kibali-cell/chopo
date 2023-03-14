@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-chopo-dev-161533-authRole",
+      "UnauthRoleArn": "arn:aws:iam::634619195179:role/amplify-chopo-dev-161533-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::634619195179:role/amplify-chopo-dev-161533-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-chopo-dev-161533-deployment",
+      "UnauthRoleName": "amplify-chopo-dev-161533-unauthRole",
+      "StackName": "amplify-chopo-dev-161533",
+      "StackId": "arn:aws:cloudformation:us-east-1:634619195179:stack/amplify-chopo-dev-161533/aa1b06e0-bf45-11ed-92cf-0ec3ec06a8bf",
+      "AmplifyAppId": "d206vibqf5dwcb"
+    },
+    "categories": {
+      "auth": {
+        "Chopo": {}
+      }
+    }
+  }
+}
